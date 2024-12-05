@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="EFCoreDbFirst.Models.Blog">
+    <Position X="6.75" Y="1.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAABAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Blog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFCoreDbFirst.Models.Post">
+    <Position X="2.25" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAgABAEEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Post.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFCoreDbFirst.Models.BlogContext">
+    <Position X="5" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAQAAAABAAAAAAAEEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BlogContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

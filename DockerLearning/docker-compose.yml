@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  swagger:
+    build:
+      context: ./DockerLearning
+    ports:
+      - "80:80"
