@@ -4,7 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using JetstreamService.Services; // Die Klasse, die den JwtService enthält
+using JetstreamService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add JwtService to DI container
-builder.Services.AddSingleton<JwtService>(); // Füge den JwtService als Singleton hinzu
+builder.Services.AddSingleton<JwtService>();
 
 // Configure Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -54,7 +54,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -70,12 +69,20 @@ app.UseStaticFiles();
 // Enable CORS (optional based on your frontend needs)
 app.UseCors("AllowAll");
 
-app.UseRouting();        
-app.UseAuthentication(); 
-app.UseAuthorization();  
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 
+// Fallback to frontend index.html for SPA routing
 app.MapFallbackToFile("frontend/index.html");
+
+// Seed database with initial data
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DatabaseSeeder.SeedEmployees(context); // Aufruf des Seeders
+}
 
 app.Run();

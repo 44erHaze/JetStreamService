@@ -1,5 +1,23 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\admin.html'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JetstreamService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JetstreamService</BasePath>
+      <RelativePath>Frontend/admin.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>fq026uocvv</Fingerprint>
+      <Integrity>N+7ZERZyTaJnhqSVcnrat/muAXJ4c8lQKRHAHqWMaT0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\admin.html'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\app.js'))">
       <SourceType>Package</SourceType>
       <SourceId>JetstreamService</SourceId>
@@ -12,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3l6edt2bha</Fingerprint>
-      <Integrity>17nPENltmQ9c550qKPAX32goGUFiGQMOz1yEvJYtNis=</Integrity>
+      <Fingerprint>5eunayf0pm</Fingerprint>
+      <Integrity>YwRy7HFg1wuzfGrV3Pt4ma5BSpG0WjL/4VZDPWW7dWQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\app.js'))</OriginalItemSpec>
@@ -30,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5wh8pmvvfm</Fingerprint>
-      <Integrity>lY1kjvuSnzVPOpT4XwSv0MWgnOesdxaerHPHBukULJ8=</Integrity>
+      <Fingerprint>umqusc90dv</Fingerprint>
+      <Integrity>qkHcqd9ZfT/CurVnUORaNVh9YvEfQWcdYlqqByIgOWA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\index.html'))</OriginalItemSpec>
@@ -48,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xdug4yhbwl</Fingerprint>
-      <Integrity>K+YiGlf8ponT2PTx/GTCJ4bx/3lp2+sgh/ffkzwm3Zs=</Integrity>
+      <Fingerprint>o5koik2ufa</Fingerprint>
+      <Integrity>9MFLyuANXn2Cnfh9OYT7zMky77iHiVyBNzp/Atip4eA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\styles.css'))</OriginalItemSpec>

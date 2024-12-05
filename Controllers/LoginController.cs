@@ -1,6 +1,6 @@
 ﻿using JetstreamService.Services;
 using Microsoft.AspNetCore.Mvc;
-using JetstreamService.Models; // Stelle sicher, dass LoginModel hier importiert wird.
+using JetstreamService.Models;
 
 namespace JetstreamService.Controllers
 {
@@ -9,7 +9,7 @@ namespace JetstreamService.Controllers
     public class LoginController : ControllerBase
     {
         private readonly JwtService _jwtService;
-        private readonly IUserService _userService; // Service zur Benutzerüberprüfung
+        private readonly IUserService _userService;
 
         public LoginController(JwtService jwtService, IUserService userService)
         {
@@ -20,7 +20,6 @@ namespace JetstreamService.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel model)
         {
-            // Überprüfen der Benutzeranmeldedaten
             var user = _userService.ValidateUser(model.Username, model.Password);
 
             if (user == null)
@@ -28,7 +27,6 @@ namespace JetstreamService.Controllers
                 return Unauthorized("Ungültiger Benutzername oder Passwort");
             }
 
-            // JWT-Token generieren
             var token = _jwtService.GenerateJwtToken(user.Username);
             return Ok(new { Token = token });
         }

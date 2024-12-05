@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\295\\JetstreamService\\wwwroot\\Frontend\\admin.html",
+      "PackagePath": "staticwebassets\\Frontend\\admin.html"
+    },
+    {
       "Id": "C:\\295\\JetstreamService\\wwwroot\\Frontend\\app.js",
       "PackagePath": "staticwebassets\\Frontend\\app.js"
     },
