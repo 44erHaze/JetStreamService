@@ -1,0 +1,6 @@
+@JetstreamService_HostAddress = http://localhost:5133
+
+GET {{JetstreamService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

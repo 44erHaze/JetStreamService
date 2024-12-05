@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetStreamService</title>
+    <!-- Bootstrap CSS einbinden -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JetStreamService</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <h2 class="text-center">Willkommen bei JetStreamService!</h2>
+        <p class="text-center mb-4">Wählen Sie den Service aus und geben Sie einen Auftrag auf.</p>
+
+        <form id="orderForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-Mail:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Telefon:</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="service" class="form-label">Service auswählen:</label>
+                <select id="service" class="form-select" required>
+                    <option value="kleiner">Kleiner Service</option>
+                    <option value="grosser">Großer Service</option>
+                    <option value="rennski">Rennski-Service</option>
+                    <option value="bindung">Bindung montieren und einstellen</option>
+                    <option value="fell">Fell zuschneiden</option>
+                    <option value="heisswachsen">Heisswachsen</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="priority" class="form-label">Priorität:</label>
+                <select id="priority" class="form-select" required>
+                    <option value="niedrig">Niedrig</option>
+                    <option value="mittel">Mittel</option>
+                    <option value="hoch">Hoch</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Auftrag erstellen</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 JetStreamService - Alle Rechte vorbehalten</p>
+        <a href="/impressum" class="text-white text-decoration-none">Impressum</a>
+    </footer>
+
+    <!-- Bootstrap JS und Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="/frontend/app.js"></script>
+</body>
+
+</html>
