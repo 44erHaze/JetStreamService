@@ -4,10 +4,12 @@
     "\\Controllers",
     "\\Data",
     "\\Models",
+    "\\Properties",
     "\\Services",
     "\\Tests",
-    "\\wwwroot"
+    "\\wwwroot",
+    "\\wwwroot\\Frontend"
   ],
-  "SelectedNode": "\\Tests\\Testplan.md",
+  "SelectedNode": "\\wwwroot\\Frontend\\impressum.html",
   "PreviewInSolutionExplorer": false
 }

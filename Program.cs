@@ -86,6 +86,7 @@ try
 
     app.MapControllers();
 
+
     // Fallback to frontend index.html for SPA routing
     app.MapFallbackToFile("frontend/index.html");
 

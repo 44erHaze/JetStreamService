@@ -127,7 +127,7 @@ async function loadServiceOrders() {
                 orderItem.innerHTML = `
                     <h3>${order.customerName}</h3>
                     <p>Service: ${order.serviceType}</p>
-                    <p>Priorität: ${order.priority}</p>
+                    <p>Priority: ${order.priority}</p>
                     <button onclick="deleteServiceOrder(${order.id})">Entfernen</button>
                 `;
                 ordersList.appendChild(orderItem);
@@ -144,6 +144,100 @@ async function loadServiceOrders() {
         alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
     }
 }
+
+// Funktion zum Aktualisieren einer ServiceOrder
+async function updateServiceOrder(orderId) {
+    const status = document.getElementById('status-' + orderId).value;
+    const employeeComment = document.getElementById('employeeComment-' + orderId).value;
+    const savedToken = localStorage.getItem('token'); // Token aus LocalStorage abrufen
+
+    if (!savedToken) {
+        alert('Du bist nicht eingeloggt. Bitte melde dich an.');
+        window.location.href = 'index.html'; // Weiterleitung zur Login-Seite
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:5133/api/serviceorders/${orderId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${savedToken}`, // Token in den Header einfügen
+            },
+            body: JSON.stringify({
+                status: status,
+                employeeComment: employeeComment
+            }),
+        });
+
+        if (response.ok) {
+            alert('ServiceOrder aktualisiert');
+            loadServiceOrders(); // Liste nach Update aktualisieren
+        } else {
+            const error = await response.text();
+            alert(`Fehler beim Aktualisieren der ServiceOrder: ${error}`);
+        }
+    } catch (error) {
+        console.error('Fehler beim Aktualisieren der ServiceOrder:', error);
+        alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+    }
+}
+
+// Funktion zum Laden der ServiceOrders (mit Update-Option)
+async function loadServiceOrders() {
+    const savedToken = localStorage.getItem('token'); // Token aus LocalStorage abrufen
+
+    if (!savedToken) {
+        alert('Du bist nicht eingeloggt. Bitte melde dich an.');
+        window.location.href = 'index.html'; // Weiterleitung zur Login-Seite
+        return;
+    }
+
+    try {
+        const response = await fetch('http://localhost:5133/api/serviceorders', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${savedToken}`, // Token in den Header einfügen
+            },
+        });
+
+        if (response.ok) {
+            const orders = await response.json();
+            const ordersList = document.getElementById('service-orders-list');
+            ordersList.innerHTML = ''; // Liste zurücksetzen
+
+            orders.forEach(order => {
+                const orderItem = document.createElement('div');
+                orderItem.innerHTML = `
+                    <h3>${order.customerName}</h3>
+                    <p>Service: ${order.serviceType}</p>
+                    <p>Priority: ${order.priority}</p>
+                    <label for="status-${order.id}">Status:</label>
+                    <select id="status-${order.id}">
+                        <option value="InProgress" ${order.status === 'InProgress' ? 'selected' : ''}>In Progress</option>
+                        <option value="Completed" ${order.status === 'Completed' ? 'selected' : ''}>Completed</option>
+                        <option value="Pending" ${order.status === 'Pending' ? 'selected' : ''}>Pending</option>
+                    </select>
+                    <label for="employeeComment-${order.id}">Kommentar:</label>
+                    <input type="text" id="employeeComment-${order.id}" value="${order.employeeComment}" />
+                    <button onclick="deleteServiceOrder(${order.id})">Entfernen</button>
+                    <button onclick="updateServiceOrder(${order.id})">Aktualisieren</button>
+                `;
+                ordersList.appendChild(orderItem);
+            });
+        } else if (response.status === 401) {
+            alert('Dein Token ist abgelaufen. Bitte melde dich erneut an.');
+            localStorage.removeItem('token');
+            window.location.href = 'index.html'; // Weiterleitung zur Login-Seite
+        } else {
+            alert('Fehler beim Abrufen der Daten.');
+        }
+    } catch (error) {
+        console.error('Fehler beim Abrufen der Aufträge:', error);
+        alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+    }
+}
+
 
 // Funktion zum Löschen einer ServiceOrder
 async function deleteServiceOrder(orderId) {
@@ -188,4 +282,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path.endsWith('admin.html')) {
         loadServiceOrders(); // Lädt die Aufträge bei Zugriff auf die Verwaltungsseite
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const impressumLink = document.querySelectorAll('[data-link="impressum"]');
+
+    impressumLink.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = 'impressum.html';
+        });
+    });
 });

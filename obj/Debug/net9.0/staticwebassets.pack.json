@@ -9,12 +9,16 @@
       "PackagePath": "staticwebassets\\Frontend\\app.js"
     },
     {
+      "Id": "C:\\295\\JetstreamService\\wwwroot\\Frontend\\impressum.html",
+      "PackagePath": "staticwebassets\\Frontend\\impressum.html"
+    },
+    {
       "Id": "C:\\295\\JetstreamService\\wwwroot\\Frontend\\index.html",
       "PackagePath": "staticwebassets\\Frontend\\index.html"
     },
     {
-      "Id": "C:\\295\\JetstreamService\\wwwroot\\Frontend\\styles.css",
-      "PackagePath": "staticwebassets\\Frontend\\styles.css"
+      "Id": "C:\\295\\JetstreamService\\wwwroot\\ski.jpg",
+      "PackagePath": "staticwebassets\\ski.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.JetstreamService.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

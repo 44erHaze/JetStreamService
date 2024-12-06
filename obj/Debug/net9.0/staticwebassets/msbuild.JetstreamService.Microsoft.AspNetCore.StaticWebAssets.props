@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fq026uocvv</Fingerprint>
-      <Integrity>N+7ZERZyTaJnhqSVcnrat/muAXJ4c8lQKRHAHqWMaT0=</Integrity>
+      <Fingerprint>2i3gmd5ivz</Fingerprint>
+      <Integrity>RpDfTvMBjm+dstrz9MXhl8VWM+Ml9XeJ5wSr9kLWVZ4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\admin.html'))</OriginalItemSpec>
@@ -30,11 +30,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>5eunayf0pm</Fingerprint>
-      <Integrity>YwRy7HFg1wuzfGrV3Pt4ma5BSpG0WjL/4VZDPWW7dWQ=</Integrity>
+      <Fingerprint>vbr5r4yifj</Fingerprint>
+      <Integrity>ZbvRR1aHu/K3uctPpcXBVKJEcUgehYkWyIB7YAUUQis=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\app.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\impressum.html'))">
+      <SourceType>Package</SourceType>
+      <SourceId>JetstreamService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/JetstreamService</BasePath>
+      <RelativePath>Frontend/impressum.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4hijeicn9w</Fingerprint>
+      <Integrity>SLqptle7SH0HJXAod7JB9DTAKkfCM9Sxkl1kWeH53PE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\impressum.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\index.html'))">
       <SourceType>Package</SourceType>
@@ -48,29 +66,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>umqusc90dv</Fingerprint>
-      <Integrity>qkHcqd9ZfT/CurVnUORaNVh9YvEfQWcdYlqqByIgOWA=</Integrity>
+      <Fingerprint>fvpx68z742</Fingerprint>
+      <Integrity>O9elfWNC5Y9sg0A9DT+pMIgffigTTLi4B9DMhWbVSbw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\styles.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ski.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>JetstreamService</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/JetstreamService</BasePath>
-      <RelativePath>Frontend/styles.css</RelativePath>
+      <RelativePath>ski.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>o5koik2ufa</Fingerprint>
-      <Integrity>9MFLyuANXn2Cnfh9OYT7zMky77iHiVyBNzp/Atip4eA=</Integrity>
+      <Fingerprint>ihuz7dnwxn</Fingerprint>
+      <Integrity>6k854is9Wf2f63wbmTRuwBl+QzIbM8NQTliLKuy3mp8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\styles.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ski.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

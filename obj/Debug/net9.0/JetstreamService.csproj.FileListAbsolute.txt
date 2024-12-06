@@ -165,10 +165,6 @@ C:\295\JetStreamService\obj\Debug\net9.0\refint\JetstreamService.dll
 C:\295\JetStreamService\obj\Debug\net9.0\JetstreamService.pdb
 C:\295\JetStreamService\obj\Debug\net9.0\JetstreamService.genruntimeconfig.cache
 C:\295\JetStreamService\obj\Debug\net9.0\ref\JetstreamService.dll
-C:\295\JetStreamService\obj\Debug\net9.0\compressed\nyqyyrc2xg-o5koik2ufa.gz
-C:\295\JetStreamService\obj\Debug\net9.0\compressed\d37lcaqb3w-umqusc90dv.gz
-C:\295\JetStreamService\obj\Debug\net9.0\compressed\gmot4eslnp-fq026uocvv.gz
-C:\295\JetStreamService\obj\Debug\net9.0\compressed\9kd3qenyuz-5eunayf0pm.gz
 C:\295\JetstreamService\obj\Debug\net9.0\MvcTestingAppManifest.json
 C:\295\JetstreamService\bin\Debug\net9.0\MvcTestingAppManifest.json
 C:\295\JetstreamService\bin\Debug\net9.0\xunit.runner.visualstudio.testadapter.dll
@@ -492,3 +488,7 @@ C:\295\JetstreamService\bin\Debug\net9.0\xunit.abstractions.dll
 C:\295\JetstreamService\bin\Debug\net9.0\xunit.assert.dll
 C:\295\JetstreamService\bin\Debug\net9.0\xunit.core.dll
 C:\295\JetstreamService\bin\Debug\net9.0\xunit.execution.dotnet.dll
+C:\295\JetstreamService\obj\Debug\net9.0\compressed\9kd3qenyuz-vbr5r4yifj.gz
+C:\295\JetstreamService\obj\Debug\net9.0\compressed\d37lcaqb3w-fvpx68z742.gz
+C:\295\JetstreamService\obj\Debug\net9.0\compressed\dtjbhls35d-4hijeicn9w.gz
+C:\295\JetstreamService\obj\Debug\net9.0\compressed\gmot4eslnp-2i3gmd5ivz.gz
