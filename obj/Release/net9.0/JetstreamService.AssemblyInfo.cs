@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+def059ae2a901dcc03f02988622c525895bed6c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66d2ec14b7c663329a399a8ac61868377cec8d06")]
 [assembly: System.Reflection.AssemblyProductAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

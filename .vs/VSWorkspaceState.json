@@ -5,7 +5,9 @@
     "\\Data",
     "\\Models",
     "\\Services",
+    "\\Tests",
     "\\wwwroot"
   ],
+  "SelectedNode": "\\Tests\\Testplan.md",
   "PreviewInSolutionExplorer": false
 }
