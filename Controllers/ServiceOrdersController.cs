@@ -47,7 +47,7 @@ namespace JetstreamService.Controllers
                 return BadRequest("Invalid order data.");
             }
 
-            // Ensure all required fields are set (you can extend this with more checks if needed)
+            // Ensure all required fields are set 
             if (string.IsNullOrEmpty(order.CustomerName) || string.IsNullOrEmpty(order.Email))
             {
                 return BadRequest("Customer name and email are required.");

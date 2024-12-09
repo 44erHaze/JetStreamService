@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30c0a03486771c7193d520aaeec5489304785ebf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20bab6ff2ccaf566a22f039a66554d6f32e1ab96")]
 [assembly: System.Reflection.AssemblyProductAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JetstreamService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

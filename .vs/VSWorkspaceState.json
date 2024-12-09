@@ -10,6 +10,6 @@
     "\\wwwroot",
     "\\wwwroot\\Frontend"
   ],
-  "SelectedNode": "\\wwwroot\\Frontend\\impressum.html",
+  "SelectedNode": "\\Controllers\\ServiceOrdersController.cs",
   "PreviewInSolutionExplorer": false
 }
